@@ -1,4 +1,15 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import App from './App.vue'
+import {createStore} from 'vuex'
 
-createApp(App).mount('#app')
+const store = createStore({
+    state() {
+        return {
+            user: {}
+        }
+    }
+})
+
+const app = createApp(App)
+app.use(store)
+app.mount('#app')
