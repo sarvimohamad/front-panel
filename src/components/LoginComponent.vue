@@ -27,6 +27,7 @@ export default {
       this.loading = true
       BaseApi.post('login', this.query)
           .then(response => {
+
             localStorage.setItem('token', response.data.token)
             location.reload()
           })
