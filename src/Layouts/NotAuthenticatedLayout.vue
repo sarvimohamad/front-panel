@@ -1,12 +1,11 @@
 <template>
-  <div class="common-layout">
-    <el-container>
-      <el-header>به فام خوش آمدید</el-header>
-      <el-main>
-        <login-component />
-      </el-main>
-    </el-container>
-  </div>
+    <el-row align="middle" justify="center" style="height: 90vh">
+      <el-col :span="6"  >
+        <div >
+          <login-component />
+        </div>
+      </el-col>
+    </el-row>
 </template>
 
 <script>
